@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid{
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .grid div{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+    </div>
+    <script>
+     document.addEventListener('DOMContentLoaded',()=>{
+        grid = document.querySelector('div');
+
+div1 =  document.createElement("div");
+div2 = document.createElement("div");
+div1.style.backgroundColor = 'red';
+div2.style.backgroundColor = 'blue';
+div1.setAttribute('id',1);
+div2.setAttribute('id',2);
+grid.appendChild(div1);
+grid.appendChild(div2)
+     })
+    </script>
+</body>
+</html>
